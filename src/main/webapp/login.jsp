@@ -34,7 +34,8 @@
             margin: 8px 0;
             border: none;
             cursor: pointer;
-            width: 100%;
+            /*width: 100%;*/
+
         }
 
         /* Add a hover effect for buttons */
@@ -47,6 +48,13 @@
             width: auto;
             padding: 10px 18px;
             background-color: #f44336;
+            display: inline-block;
+        }
+        .registerbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: lightskyblue;
+            display: inline-block;
         }
 
         /* Center the avatar image inside this container */
@@ -105,8 +113,9 @@
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <button type="button" class="cancelbtn" onclick="window.location.href='index.jsp'">Cancel</button>
+        <button type="button" class="registerbtn" onclick="window.location.href='register.jsp'">Register</button>
+        <span class="psw">Forgot <a href="resetpass.jsp">password?</a></span>
     </div>
 </form>
 
